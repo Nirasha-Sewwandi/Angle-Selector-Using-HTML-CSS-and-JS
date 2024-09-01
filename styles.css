@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font style */
+    background-color: #f0f2f5; /* Soft gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 40px;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    text-align: center;
+    width: 450px; /* Adjusted width for a sleeker look */
+}
+
+h1 {
+    font-size: 26px; /* Larger font size for header */
+    margin-bottom: 25px; /* Increased margin for better spacing */
+    color: #333; /* Darker gray for better readability */
+    text-transform: uppercase; /* Uppercase text for style */
+    letter-spacing: 1px; /* Added spacing between letters */
+}
+
+.input-group,
+.slider-group,
+.preset-group {
+    margin-bottom: 25px; /* Increased spacing between groups */
+}
+
+.input-group label,
+.slider-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555; /* Dark gray for labels */
+}
+
+#angleInput {
+    width: 100px; /* Wider input box */
+    text-align: center;
+    font-size: 18px;
+    padding: 8px; /* More padding for better user experience */
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* More rounded corners */
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+}
+
+#angleInput:focus {
+    border-color: #6c63ff; /* Purple border on focus */
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.4); /* Subtle glow effect on focus */
+}
+
+.slider-group {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+#angleSlider {
+    width: 100%;
+    cursor: pointer;
+    appearance: none; /* Remove default slider styling */
+    background-color: #ddd; /* Light gray slider track */
+    height: 8px; /* Thicker track for better visibility */
+    border-radius: 4px; /* Rounded track */
+    outline: none;
+    margin-top: 10px; /* Margin between label and slider */
+}
+
+#angleSlider::-webkit-slider-thumb {
+    background-color: #6c63ff; /* Purple thumb */
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #fff; /* White border around thumb */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+#angleSlider::-webkit-slider-thumb:hover {
+    background-color: #5a54d1; /* Darker purple on hover */
+}
+
+#angleSlider::-moz-range-thumb {
+    background-color: #6c63ff; /* Purple thumb for Firefox */
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#angleSlider::-moz-range-thumb:hover {
+    background-color: #5a54d1; /* Darker purple on hover */
+}
+
+.preset-group p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555; /* Dark gray for the preset text */
+}
+
+.preset-group label {
+    margin-right: 15px; /* More space between radio buttons */
+    font-size: 16px;
+    color: #6c63ff; /* Purple for radio button text */
+    cursor: pointer;
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.preset-group input[type="radio"] {
+    margin-right: 5px; /* Spacing between radio button and label */
+    cursor: pointer;
+}
+
+.preset-group input[type="radio"]:checked + label {
+    color: #333; /* Dark color when selected */
+}
