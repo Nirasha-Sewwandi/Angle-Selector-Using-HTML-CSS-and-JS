@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angle Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select an Angle</h1>
+        
+        <!-- Input for typing the angle -->
+        <div class="input-group">
+            <label for="angleInput">Set Angle (0° to 360°):</label>
+            <input type="number" id="angleInput" value="0" min="0" max="360" step="1">
+        </div>
+        
+        <!-- Slider for selecting the angle -->
+        <div class="slider-group">
+            <label for="angleSlider">Adjust Angle:</label>
+            <input type="range" id="angleSlider" min="0" max="360" value="0">
+        </div>
+
+        <!-- Preset radio buttons for selecting the angle -->
+        <div class="preset-group">
+            <p>Select a Preset Angle:</p>
+            <label><input type="radio" name="presetAngle" value="0" checked> 0°</label>
+            <label><input type="radio" name="presetAngle" value="30"> 30°</label>
+            <label><input type="radio" name="presetAngle" value="45"> 45°</label>
+            <label><input type="radio" name="presetAngle" value="90"> 90°</label>
+            <label><input type="radio" name="presetAngle" value="180"> 180°</label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
